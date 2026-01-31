@@ -135,14 +135,20 @@
     }
 
     .typing-text {
-        font-size: 1.3rem;
-        color: var(--gray);
-        margin-bottom: 1.5rem;
-        min-height: 2rem;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem; /* Adds consistent spacing */
+    font-size: 1.3rem;
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    min-height: 2rem;
+}
+
+#typing {
+    color: var(--primary);
+    font-weight: 600;
+}
 
     .hero-description {
         font-size: 1.1rem;
@@ -865,8 +871,8 @@
             <div class="hero-text">
                 <h1>Hi, I'm <span class="gradient-text">Chandrabhan Singh</span></h1>
                 <div class="typing-text">
-                    I'm a <span id="typing"></span><span class="cursor">|</span>
-                </div>
+                   I'm a <span id="typing"></span><span class="cursor">|</span>
+                 </div>
                 <p class="hero-description">
                     Senior DevOps Engineer with 7+ years of experience in cloud platforms (Azure, AWS), 
                     container orchestration (Kubernetes, Docker), and CI/CD automation. 
